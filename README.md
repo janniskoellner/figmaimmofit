@@ -1,2 +1,2 @@
 # figmaimmofit
-hier sind alle datein die wir für die erstellung des Figma Mochups brauchen
+In diesem Repo ist das Mockup zu der App Immofit welche im Rahmen des Moduls Projektmanagement (Fallstudie) für die Präsentation benötigt wurde.
