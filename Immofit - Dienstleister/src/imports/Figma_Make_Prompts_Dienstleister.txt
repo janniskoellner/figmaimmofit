@@ -1,0 +1,528 @@
+
+================================================================================
+FIGMA MAKE PROMPTS - DIENSTLEISTER-PORTAL
+================================================================================
+
+Jeder Prompt erzeugt eine eigene Seite. Alle Seiten teilen dieselbe Navigation.
+Stil: Modern, professionell, clean. Farbschema: Blau (#2563EB) als Primary,
+Grün (#10B981) für Erfolg/Aktiv, Orange (#F59E0B) für "Neu"/Warnung.
+Font: Inter. 8px-Grid. Desktop 1440px.
+
+================================================================================
+PROMPT 1: DIENSTLEISTER DASHBOARD
+================================================================================
+
+Design a professional SaaS dashboard for "ImmoFit für Dienstleister" – a web app
+where craftsmen and energy consultants manage project requests and client projects.
+Desktop layout, 1440x900px, modern and clean.
+
+1. Top Navigation Bar (fixed):
+   - Left: "ImmoFit" logo with "für Dienstleister" subtitle in smaller grey text
+   - Center: Empty (clean)
+   - Right: Notifications bell icon (with red badge showing "3"), Profile avatar with dropdown
+
+2. Left Sidebar (240px width):
+   - Navigation items with icons:
+     * Dashboard (grid icon) - active state (blue highlight, bold text)
+     * Projektanfragen (inbox icon) - with orange badge "5 Neu"
+     * Meine Projekte (folder icon)
+     * Profil (user icon)
+   - Bottom: Settings gear icon, Logout
+
+3. Main Content Area:
+
+   **Section 1 - KPI Row (4 cards, equal width, top of page):**
+   - Card 1: "Neue Anfragen" - large number "5" - orange icon (inbox) - small text "+2 heute"
+   - Card 2: "Aktive Projekte" - large number "3" - blue icon (folder-open) - small text "1 wartet auf Freigabe"
+   - Card 3: "Abgeschlossen" - large number "12" - green icon (check-circle) - small text "diesen Monat: 2"
+   - Card 4: "Bewertung" - large number "4.8" with star icon - yellow stars (4.8/5) - small text "24 Bewertungen"
+   Each card: white background, subtle shadow, rounded corners (8px), icon left, numbers right-aligned
+
+   **Section 2 - "Neue Projektanfragen" (left side, 60% width):**
+   - Section header: "Neue Projektanfragen" with "Alle ansehen →" link right-aligned
+   - List of 4 request items, each row:
+     * Orange "NEU" badge (left)
+     * Property info: "Einfamilienhaus · Musterstraße 12, 80331 München"
+     * Desired measure: "Dachdämmung" in a subtle grey pill
+     * Budget: "15.000 - 20.000 €"
+     * Time: "vor 2 Stunden" in grey
+     * Two buttons right: "Details" (outline) and "Angebot abgeben" (primary blue)
+   - Each row has subtle bottom border, hover state with light blue background
+
+   **Section 3 - "Aktive Projekte" (right side, 40% width):**
+   - Section header: "Aktive Projekte"
+   - 3 project cards stacked vertically:
+     * Card 1:
+       - Status badge: "In Arbeit" (blue pill)
+       - "Fam. Schmidt · Dachsanierung"
+       - Progress bar: 65% (green fill)
+       - "Nächster Schritt: Material bestellen"
+       - Button: "Projekt öffnen →"
+     * Card 2:
+       - Status badge: "Beauftragt" (orange pill)
+       - "Fam. Weber · Wärmepumpe"
+       - Progress bar: 15% (yellow fill)
+       - "Nächster Schritt: Termin vereinbaren"
+       - Button: "Projekt öffnen →"
+     * Card 3:
+       - Status badge: "Wartet auf Freigabe" (grey pill)
+       - "Fam. Müller · Fassadendämmung"
+       - Progress bar: 90% (green fill)
+       - "Nächster Schritt: Abnahme"
+       - Button: "Projekt öffnen →"
+
+**Key Features:**
+- Emphasize NEW/urgent items with orange accents
+- Use status badges consistently (colored pills with text)
+- Progress bars should be rounded with percentage text
+- All buttons should have clear hover effects
+- Maintain professional, business-oriented aesthetic
+- Subtle drop shadows on cards (0 2px 8px rgba(0,0,0,0.08))
+- 16px base grid system
+- White background (#FFFFFF), light grey page background (#F9FAFB)
+
+
+================================================================================
+PROMPT 2: PROJEKTANFRAGEN (LISTE)
+================================================================================
+
+Design the "Projektanfragen" (Project Requests) page for the ImmoFit Dienstleister
+web app. This is where craftsmen browse and respond to homeowner requests.
+Desktop layout, 1440x900px, same style as the dashboard.
+
+Same Top Nav & Sidebar as dashboard (but "Projektanfragen" is now active with
+blue highlight in sidebar, badge still shows "5 Neu").
+
+**Section 1 - Filter Bar (full width, sticky below topbar):**
+   - Row of filters, horizontally aligned:
+     * Dropdown 1: "Maßnahme" (default: "Alle Maßnahmen")
+       Options: Dämmung (Fassade, Dach, Keller), Heizung (Wärmepumpe, Gas, Pellets),
+       Solar/PV, Fenster & Türen, Alle anzeigen
+     * Dropdown 2: "Region" (default: "Alle Regionen")
+     * Dropdown 3: "Budget" (default: "Alle Budgets")
+       Options: bis 10.000 €, 10.000-25.000 €, 25.000-50.000 €, über 50.000 €
+     * Search field: Placeholder "Projekt suchen..."
+     * Toggle switch: "Nur neue Anfragen" (right-aligned)
+   - Light grey background (#F3F4F6), subtle bottom border
+
+**Section 2 - Results Header:**
+   - Left: "12 Projektanfragen" (bold)
+   - Right: Sort dropdown "Sortieren nach: Neueste zuerst"
+
+**Section 3 - Project Cards Grid (3 columns, responsive):**
+   
+   Card 1 (with "NEU" badge):
+   - Top-left corner: Orange "NEU" badge (pulsing optional)
+   - Object type icon + "Einfamilienhaus"
+   - Address: "Musterstraße 12, 80331 München"
+   - Divider line
+   - Info grid (2 columns):
+     * Baujahr: 1985
+     * Wohnfläche: 180 m²
+   - Desired measures: "Dachdämmung" + "Fassadendämmung" (as pills/tags)
+   - Budget: "25.000 - 35.000 €" (bold)
+   - Timeline: "Gewünscht: Q2 2026"
+   - Two buttons at bottom:
+     * "Details ansehen" (outline, full width)
+     * "Angebot abgeben" (primary blue, full width)
+   
+   Card 2 (with "NEU" badge):
+   - Orange "NEU" badge
+   - "Mehrfamilienhaus"
+   - "Hauptstraße 5, 81667 München"
+   - Baujahr: 1972 · Wohnfläche: 450 m²
+   - Measures: "Wärmepumpe" + "Kellerdeckendämmung"
+   - Budget: "40.000 - 55.000 €"
+   - Timeline: "Gewünscht: Q3 2026"
+   - Same two buttons
+
+   Card 3 (no badge, older request):
+   - "Doppelhaushälfte"
+   - "Gartenweg 8, 85748 Garching"
+   - Baujahr: 1998 · Wohnfläche: 140 m²
+   - Measures: "Solar/PV-Anlage"
+   - Budget: "12.000 - 18.000 €"
+   - Timeline: "Gewünscht: Q1 2026"
+   - Same two buttons
+
+   (Show 6 cards total in 2 rows of 3)
+
+**Section 4 - Pagination (bottom center):**
+   - "← Zurück" | 1 | 2 | 3 | "Weiter →"
+   - Current page highlighted in blue
+
+**Key Features:**
+- Cards should have consistent spacing (24px gap)
+- Filter bar should feel lightweight and fast
+- "NEU" badges should draw attention (orange, slightly rounded)
+- Budget should be the most prominent info (bold, larger text)
+- Measures shown as colored pills/tags
+- Hover state on cards: slight shadow increase + border color change
+- Empty state: Show illustration + "Keine Projektanfragen gefunden" if filters return 0
+
+
+================================================================================
+PROMPT 3: PROJEKT-DETAIL (MODAL / SEPARATE SEITE)
+================================================================================
+
+Design the "Projekt-Detail" view for the ImmoFit Dienstleister web app. This opens
+when a craftsman clicks "Details ansehen" on a project request. Can be a modal
+(centered, 900px wide) or a full page. Desktop layout.
+
+Same Top Nav & Sidebar as before.
+
+**Section 1 - Property Header (full width):**
+   - Left side (50% width):
+     * Property image carousel (3 images, with navigation dots)
+     * Images show a typical German house exterior
+   - Right side (50% width):
+     * Property address (H1, bold): "Musterstraße 12, 80331 München"
+     * Key data in a clean grid:
+       - Baujahr: 1985
+       - Wohnfläche: 180 m²
+       - Grundstück: 450 m²
+       - Aktuelles Heizsystem: Gas-Brennwert
+       - Energieklasse: "E" (with colored badge, orange)
+     * Orange "NEU" badge (if new request)
+     * "Erstellt am: 10.03.2026" in grey text
+
+**Section 2 - Gewünschte Maßnahmen (Card):**
+   - Header: "Gewünschte Maßnahmen" (H2)
+   - List of measures from the homeowner's ISFP:
+     * Maßnahme 1: "Dachdämmung"
+       - Beschreibung: "Komplette Dachdämmung inkl. Dampfsperre"
+       - Geschätzte Kosten (ISFP): "12.000 - 15.000 €"
+       - Einsparung/Jahr: "450 €"
+     * Maßnahme 2: "Fassadendämmung"  
+       - Beschreibung: "WDVS Fassadendämmung, 16cm"
+       - Geschätzte Kosten (ISFP): "18.000 - 22.000 €"
+       - Einsparung/Jahr: "680 €"
+   - Each measure as a sub-card with icon
+   - Total budget range: "25.000 - 35.000 €" (prominent, bold)
+   - Desired timeline: "Gewünscht: Start Q2 2026"
+
+**Section 3 - Besondere Anforderungen:**
+   - Grey box with customer notes:
+     * "Das Dach hat eine Südausrichtung. Bitte prüfen Sie auch die Möglichkeit
+       einer PV-Anlage auf dem neuen Dach. Zugang über die Garageneinfahrt."
+   - Small info text: "Angaben vom Eigentümer"
+
+**Section 4 - Angebot abgeben (Form):**
+   - Header: "Ihr Angebot" (H2)
+   - Form fields:
+     * Input: "Angebotssumme (€)" - number field with € symbol
+       Placeholder: "z.B. 28.500"
+     * Date range: "Vorgeschlagener Zeitraum"
+       - "Von:" date picker (default: empty)
+       - "Bis:" date picker (default: empty)
+     * Textarea: "Nachricht an den Kunden"
+       Placeholder: "Beschreiben Sie Ihr Angebot, Vorgehensweise und Besonderheiten..."
+       (6 rows)
+     * File upload zone:
+       - Dashed border area
+       - Cloud upload icon
+       - "Detailliertes Angebot hochladen (PDF)"
+       - "Drag & Drop oder klicken zum Auswählen"
+       - "Max. 10 MB, PDF-Format"
+     * Checkbox: "Ich bestätige, dass dieses Angebot verbindlich ist"
+   - Buttons at bottom:
+     * "Abbrechen" (grey outline, left)
+     * "Angebot absenden" (primary blue, right, large)
+
+**Key Features:**
+- Clean form design with proper labels and placeholders
+- File upload zone with clear visual feedback (dashed border → solid on drag-over)
+- Property data should be scannable at a glance
+- Measure cards should show the value proposition (Einsparung)
+- Form validation states: red border + error text for empty required fields
+- Success state after submit: Green checkmark + "Angebot erfolgreich gesendet!"
+- Back button / breadcrumb at top: "← Zurück zu Projektanfragen"
+
+
+================================================================================
+PROMPT 4: MEINE PROJEKTE (LISTE)
+================================================================================
+
+Design the "Meine Projekte" (My Projects) page for the ImmoFit Dienstleister
+web app. This shows all projects the craftsman is involved in.
+Desktop layout, 1440x900px.
+
+Same Top Nav & Sidebar ("Meine Projekte" active in sidebar, blue highlight).
+
+**Section 1 - Tab Navigation (full width):**
+   - Three tabs, horizontally:
+     * "Aktive Projekte (3)" - active tab (blue underline, bold)
+     * "Abgeschlossene Projekte (12)"
+     * "Gesendete Angebote (2)"
+   - Subtle border-bottom on the tab row
+
+**Section 2 - Project List (full width, single column):**
+   
+   Each project is a wide card (full content width):
+   
+   Project Card 1:
+   - Left section (70%):
+     * Status badge: "In Arbeit" (blue pill)
+     * Title: "Dachsanierung" (H3, bold)
+     * Customer: "👤 Fam. Schmidt · Tel: 089 12345678"
+     * Address: "📍 Musterstraße 12, 80331 München"
+     * Measure: "🔧 Dachdämmung + Dacheindeckung"
+     * Contract sum: "💰 28.500 €" (bold)
+     * Timeline: "📅 15.04.2026 - 30.06.2026"
+   - Right section (30%):
+     * Progress circle or bar: "65%" (green)
+     * "Nächster Schritt:" label
+     * "Material bestellen" (in a subtle card)
+     * Button: "Projekt öffnen →" (primary, full width of right section)
+
+   Project Card 2:
+   - Status badge: "Beauftragt" (orange pill)
+   - Title: "Wärmepumpe Installation"
+   - Customer: "👤 Fam. Weber · Tel: 089 98765432"
+   - Address: "📍 Hauptstraße 5, 81667 München"
+   - Contract sum: "💰 42.000 €"
+   - Timeline: "📅 01.07.2026 - 15.09.2026"
+   - Progress: "15%" (yellow)
+   - Next step: "Termin vereinbaren"
+
+   Project Card 3:
+   - Status badge: "Wartet auf Freigabe" (grey pill)
+   - Title: "Fassadendämmung"
+   - Customer: "👤 Fam. Müller · Tel: 089 55566677"
+   - Address: "📍 Gartenweg 8, 85748 Garching"
+   - Contract sum: "💰 35.200 €"
+   - Timeline: "📅 01.03.2026 - 30.04.2026"
+   - Progress: "90%" (green)
+   - Next step: "Abnahme durch Kunden"
+
+**Key Features:**
+- Cards should be wide and information-rich but not cluttered
+- Use icons (emoji or Lucide) to make information scannable
+- Progress visualization should be prominent
+- Status badges use consistent colors across the app
+- Hover: card lifts slightly (shadow increase)
+- Tab count shows total per category
+- If "Gesendete Angebote" tab active: show cards with "Angebot gesendet am: 08.03.2026"
+  and status "Wartet auf Antwort" or "Angenommen" or "Abgelehnt"
+
+
+================================================================================
+PROMPT 5: PROJEKT-DETAIL (EIGENE SEITE)
+================================================================================
+
+Design the "Projekt-Detail" page for an active project in the ImmoFit Dienstleister
+web app. This is the main workspace for managing a specific project.
+Desktop layout, 1440x900px.
+
+Same Top Nav & Sidebar.
+Breadcrumb: "Meine Projekte → Dachsanierung · Fam. Schmidt"
+
+**Section 1 - Project Header (full width):**
+   - Left side:
+     * Title: "Dachsanierung" (H1)
+     * Status dropdown: "In Arbeit" (blue, clickable to change status)
+       Options: Beauftragt, In Arbeit, Wartet auf Freigabe, Abgeschlossen
+     * Customer: "Fam. Schmidt" with phone & email icons (clickable)
+   - Right side:
+     * Address: "Musterstraße 12, 80331 München" (with map pin icon)
+     * Contract sum: "28.500 €" (large, bold)
+     * Timeline: "15.04.2026 - 30.06.2026"
+
+**Section 2 - Tab Navigation:**
+   - Three tabs:
+     * "Übersicht" (active)
+     * "Dokumente"
+     * "Kommunikation"
+
+   **TAB 1 - Übersicht:**
+   
+   a) Project Timeline (Horizontal progress bar):
+      - Visual timeline with 4 phases:
+        * Phase 1: "Planung" (✓ completed - green)
+        * Phase 2: "Material" (● current - blue, pulsing)
+        * Phase 3: "Ausführung" (○ upcoming - grey)
+        * Phase 4: "Abnahme" (○ upcoming - grey)
+      - Connected by lines, completed phases have green line
+      - Below each phase: date range
+
+   b) Milestones (Card):
+      - List of milestones with checkboxes:
+        * ✅ "Aufmaß genommen" - 16.04.2026
+        * ✅ "Angebot bestätigt" - 18.04.2026
+        * ⬜ "Material bestellt" - geplant: 25.04.2026
+        * ⬜ "Gerüst aufgebaut" - geplant: 01.05.2026
+        * ⬜ "Dämmung verlegt" - geplant: 15.05.2026
+        * ⬜ "Abnahme" - geplant: 28.06.2026
+
+   c) Quick Actions (Right sidebar or bottom):
+      - Button: "Status aktualisieren" (primary)
+      - Button: "Rechnung erstellen" (outline)
+      - Button: "Kunde kontaktieren" (outline)
+      - Button: "Projekt abschließen" (green, only if >90%)
+
+   **TAB 2 - Dokumente:**
+   
+   a) Upload Section:
+      - Drag & drop area (prominent)
+      - "Dokument hochladen" with cloud upload icon
+      - Supported formats: "PDF, JPG, PNG (max. 10 MB)"
+   
+   b) Document Categories (Tabs or filter):
+      - "Alle" | "Angebote" | "Verträge" | "Rechnungen" | "Fotos" | "Protokolle"
+   
+   c) Document List:
+      - Table/Grid with documents:
+        * Icon (PDF/Image) | Filename | Category | Upload date | Size | Download button
+      - Example entries:
+        * 📄 "Angebot_Dachsanierung_Schmidt.pdf" | Angebote | 18.04.2026 | 2.1 MB
+        * 📄 "Vertrag_unterschrieben.pdf" | Verträge | 20.04.2026 | 1.8 MB
+        * 📷 "Dach_vorher_01.jpg" | Fotos | 16.04.2026 | 3.2 MB
+        * 📷 "Dach_vorher_02.jpg" | Fotos | 16.04.2026 | 2.8 MB
+
+   **TAB 3 - Kommunikation:**
+   
+   a) Message Thread (chat-style):
+      - Messages in bubbles:
+        * Customer (left, grey bubble): "Hallo, wann können Sie mit der Dachsanierung beginnen?"
+          - Timestamp: "10.03.2026, 14:32"
+        * Dienstleister (right, blue bubble): "Guten Tag Herr Schmidt, wir können am 15. April starten. Ich schicke Ihnen vorab das Material-Angebot."
+          - Timestamp: "10.03.2026, 15:10"
+        * Customer (left): "Das klingt gut! Bitte berücksichtigen Sie auch die Südseite für mögliche PV-Vorbereitung."
+          - Timestamp: "10.03.2026, 16:45"
+        * Dienstleister (right): "Selbstverständlich, ich plane das mit ein. Hier das aktualisierte Angebot."
+          - Attached file: "📎 Angebot_v2.pdf"
+          - Timestamp: "11.03.2026, 09:20"
+   
+   b) Message Input (bottom, fixed):
+      - Text input field: "Nachricht schreiben..."
+      - Attachment icon (paperclip)
+      - Send button (blue arrow icon)
+
+**Key Features:**
+- Timeline should be visually prominent and easy to understand
+- Status dropdown should update immediately with animation
+- Document upload should show progress bar during upload
+- Chat should auto-scroll to latest message
+- Milestones should be interactive (click to mark as done)
+- Use consistent spacing and alignment
+- Breadcrumb for easy navigation back
+
+
+================================================================================
+PROMPT 6: PROFIL (FIRMENPROFIL)
+================================================================================
+
+Design the "Profil" (Company Profile) page for the ImmoFit Dienstleister web app.
+This is where craftsmen manage their public profile. Desktop layout, 1440x900px.
+
+Same Top Nav & Sidebar ("Profil" active in sidebar).
+
+**Section 1 - Profile Header:**
+   - Left: Large logo upload area (120x120px, rounded square)
+     * Current: Company logo placeholder or uploaded logo
+     * Overlay on hover: Camera icon + "Logo ändern"
+   - Right of logo:
+     * Company name (H1): "Meisterbetrieb Huber GmbH"
+     * Subtitle: "Energieberatung · Dachdeckerei · Dämmung"
+     * Rating: ★★★★★ 4.8 (24 Bewertungen)
+     * Badge: "✓ Verifiziert" (green badge)
+   - Right side: "Profil bearbeiten" button (outline) / "Speichern" (primary, when editing)
+
+**Section 2 - Firmendaten (Form/Card):**
+   - Header: "Firmendaten"
+   - Form fields (2-column grid):
+     * Firmenname: "Meisterbetrieb Huber GmbH"
+     * Inhaber: "Max Huber"
+     * Straße: "Handwerkerstraße 15"
+     * PLZ / Ort: "80331 München"
+     * Telefon: "089 12345678"
+     * E-Mail: "info@huber-dach.de"
+     * Website: "www.huber-dach.de"
+     * Gründungsjahr: "2005"
+     * Mitarbeiter: "8"
+   - Textarea: "Über uns" (max 500 Zeichen)
+     * "Seit über 20 Jahren sind wir Ihr zuverlässiger Partner für Dacharbeiten
+       und energetische Sanierung in München und Umgebung..."
+
+**Section 3 - Kategorien & Gewerke:**
+   - Header: "Kategorien & Gewerke"
+   - Checkbox grid (3 columns):
+     * ☑ Energieberatung
+     * ☑ Dachdämmung
+     * ☑ Fassadendämmung
+     * ☐ Kellerdeckendämmung
+     * ☐ Heizungsbau (Wärmepumpe)
+     * ☐ Heizungsbau (Gas/Pellets)
+     * ☐ Solar/PV-Installation
+     * ☑ Fenster & Türen
+     * ☐ Elektroinstallation
+   - Subfield: "Einzugsgebiet"
+     * Dropdown: "Umkreis: 50 km" or PLZ-Eingabe
+
+**Section 4 - Qualifikationen & Zertifikate:**
+   - Header: "Qualifikationen & Zertifikate"
+   - List of certificates:
+     * Row 1: "BAFA-Zulassung Energieberatung"
+       - Badge: "✓ Verifiziert" (green)
+       - Upload date: "Hochgeladen: 15.02.2026"
+       - File: "📄 BAFA_Zulassung_2026.pdf" (clickable)
+     * Row 2: "Handwerkskammer München - Meisterbrief"
+       - Badge: "✓ Verifiziert" (green)
+       - File: "📄 Meisterbrief_Huber.pdf"
+     * Row 3: "Fachbetrieb nach WHG"
+       - Badge: "⏳ In Prüfung" (orange)
+       - File: "📄 WHG_Nachweis.pdf"
+   - Button: "+ Zertifikat hinzufügen" (outline, dashed border)
+   - Upload zone for new certificates
+
+**Section 5 - Bewertungen & Referenzen:**
+   - Header: "Bewertungen" with average rating prominent
+   - Big rating display:
+     * "4.8" (large, 48px) + 5 yellow stars (4.8 filled) + "(24 Bewertungen)"
+   - Rating distribution bar chart:
+     * 5 Sterne: ████████████ 18
+     * 4 Sterne: ████ 4
+     * 3 Sterne: █ 1
+     * 2 Sterne: ░ 0
+     * 1 Stern:  █ 1
+   - List of reviews (3 shown, "Alle anzeigen" link):
+     * Review 1:
+       - "Fam. Schmidt" · ★★★★★
+       - "Hervorragende Arbeit bei unserer Dachsanierung. Pünktlich, sauber und 
+         professionell. Absolut empfehlenswert!"
+       - "Projekt: Dachsanierung · März 2026"
+       - Dienstleister-Antwort: "Vielen Dank für die tolle Bewertung! Es war uns
+         eine Freude." (indented, with reply icon)
+     * Review 2:
+       - "Herr Weber" · ★★★★☆
+       - "Gute Beratung und fachgerechte Ausführung. Zeitplan wurde leider um 
+         eine Woche überzogen."
+       - "Projekt: Fassadendämmung · Januar 2026"
+       - Button: "Antworten" (small, outline)
+     * Review 3:
+       - "Fam. Bauer" · ★★★★★
+       - "Top Service! Von der Beratung bis zur Abnahme alles aus einem Guss."
+       - "Projekt: Fensteraustausch · Dezember 2025"
+
+**Section 6 - Einstellungen:**
+   - Header: "Einstellungen"
+   - Toggle switches:
+     * "E-Mail bei neuen Projektanfragen" - ON (blue)
+     * "E-Mail bei Projekt-Updates" - ON (blue)
+     * "Push-Benachrichtigungen" - OFF (grey)
+   - Availability:
+     * Toggle: "Aktuell Aufträge annehmend" - ON (green)
+     * Date field: "Ausgelastet bis:" (empty or date)
+   - Danger zone (subtle red border):
+     * Button: "Passwort ändern" (outline)
+     * Button: "Konto löschen" (red text, no fill)
+
+**Key Features:**
+- Profile should feel like a polished business card
+- Verification badges add trust (green checkmarks)
+- Rating display should be visually prominent
+- Form fields should have clear labels and edit states
+- Certificate uploads with verification status
+- Reviews should be easy to scan
+- Save button sticky at bottom when editing
+- Success toast: "Profil erfolgreich gespeichert" after save
