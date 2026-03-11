@@ -5,5 +5,5 @@ In diesem Repo ist das Mockup zu der App Immofit welche im Rahmen des Moduls Pro
 
   And
   
-  This is a code bundle for ImmoFit - Dienstleister. The original project is available at https://www.figma.com/design/6TmyuUA5CZxphDo7jhmNor/Immofit---Dienstleister.
+  This is a code bundle for ImmoFit - Dienstleister. The original project is available at https://www.figma.com/design/rsoruCpJ2lRjflfBNT5O05/Immofit---Dienstleister.
 
