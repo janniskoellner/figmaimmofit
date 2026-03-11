@@ -1,7 +1,7 @@
 
   # Immofit - Dienstleister
 
-  This is a code bundle for Immofit - Dienstleister. The original project is available at https://www.figma.com/design/rsoruCpJ2lRjflfBNT5O05/Immofit---Dienstleister.
+  This is a code bundle for Immofit - Dienstleister. The original project is available at https://www.figma.com/make/rsoruCpJ2lRjflfBNT5O05/Immofit---Dienstleister?p=f&fullscreen=1.
 
   ## Running the code
 
