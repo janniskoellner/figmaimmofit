@@ -1,0 +1,11 @@
+
+  # Immofit - Dienstleister
+
+  This is a code bundle for Immofit - Dienstleister. The original project is available at https://www.figma.com/design/6TmyuUA5CZxphDo7jhmNor/Immofit---Dienstleister.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
